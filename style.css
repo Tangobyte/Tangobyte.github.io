@@ -1,0 +1,31 @@
+body{background-color: darkcyan;}
+.articlebackground{background-color: white;}
+h1 {
+    text-align:center;
+    color: black;
+}
+p {color: blue;}
+
+/*Navigation bar*/
+nav {font-family: Arial, Helvetica, sans-serif;}
+  ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightseagreen;
+  }
+  li {float: left;}
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li a:hover {
+    background-color: darkcyan;
+  }
+  .active {
+    background-color: lightsteelblue;
+  }
