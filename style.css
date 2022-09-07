@@ -1,11 +1,47 @@
+/*Layout*/
+.parent {
+  display: grid;
+  grid-template: auto 1fr auto / auto 1fr auto;
+}
+
+header {
+  padding: 2rem;
+  grid-column: 1 / 4;
+  color: blue;
+}
+
+.left-side {
+  grid-column: 1 / 2;
+  background-color:aquamarine;
+}
+
+main {
+  grid-column: 2 / 3;
+  color:lightseagreen;
+}
+
+.right-side {
+  grid-column: 3 / 4;
+  background-color:darkblue;
+}
+
+footer {
+  grid-column: 1 / 4;
+  color:cyan;
+  text-align:center;
+}
+/*Text styles*/
 body{background-color: darkcyan;}
 .articlebackground{background-color: white;}
 h1 {
     text-align:center;
     color: black;
 }
-p {color: blue;}
+p, h2, h3, h4 {color: black;}
 
+.characteristic {
+  color: black;
+}
 /*Navigation bar*/
 nav {font-family: Arial, Helvetica, sans-serif;}
   ul {
@@ -15,7 +51,10 @@ nav {font-family: Arial, Helvetica, sans-serif;}
     overflow: hidden;
     background-color: lightseagreen;
   }
-  li {float: left;}
+  li {
+    float: left;
+    border-right: 1px solid #bbb;
+  }
   li a {
     display: block;
     color: white;
@@ -28,4 +67,7 @@ nav {font-family: Arial, Helvetica, sans-serif;}
   }
   .active {
     background-color: lightsteelblue;
+  }
+  li:last-child {
+    border-right: none;
   }
