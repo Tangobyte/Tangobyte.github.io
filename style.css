@@ -7,7 +7,7 @@
 header {
   padding: 2rem;
   grid-column: 1 / 4;
-  color: blue;
+  color: cyan;
 }
 
 .left-side {
@@ -17,12 +17,12 @@ header {
 
 main {
   grid-column: 2 / 3;
-  color:lightseagreen;
+  color:darkcyan;
 }
 
 .right-side {
   grid-column: 3 / 4;
-  background-color:darkblue;
+  background-color:aquamarine;
 }
 
 footer {
@@ -31,7 +31,6 @@ footer {
   text-align:center;
 }
 /*Text styles*/
-body{background-color: darkcyan;}
 .articlebackground{background-color: white;}
 h1 {
     text-align:center;
@@ -44,30 +43,56 @@ p, h2, h3, h4 {color: black;}
 }
 /*Navigation bar*/
 nav {font-family: Arial, Helvetica, sans-serif;}
-  ul {
+  header nav ul {
     list-style-type:none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: lightseagreen;
+    position: sticky;
   }
-  li {
-    float: left;
-    border-right: 1px solid #bbb;
+  header li {
+    float: right;
+    border-left: 1px solid #bbb;
   }
-  li a {
+  header nav a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
-  li a:hover {
+  header nav a:hover {
     background-color: darkcyan;
   }
   .active {
     background-color: lightsteelblue;
   }
   li:last-child {
-    border-right: none;
+    border-left: none;
+  }
+  /*Additional menu*/
+  .subnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    border: 1px solid #555;
+  }
+  .subnav li {
+    text-align: center;
+    border-bottom: 1px solid #555;
+  }
+
+  .subnav li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .subnav li a:hover {
+    background-color: #555;
+    color: white;
   }
