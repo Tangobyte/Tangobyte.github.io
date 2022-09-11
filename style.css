@@ -32,7 +32,7 @@ main {
   grid-row-end: 3;
   color:darkcyan;
   padding: 40px;
-  background-color:lightblue;
+  background-color:rgb(122, 163, 194);
 }
 
 .right-side {
@@ -41,6 +41,7 @@ main {
   grid-row-start:2;
   grid-row-end: 3;
   background-color:lightseagreen;
+  column-width: 200px;
 }
 
 footer {
@@ -58,6 +59,15 @@ p, h2, h3, h4 {color: black;}
 
 .characteristic {
   color: black;
+}
+
+img {
+  padding: 15px;
+}
+
+article {
+  background-color: lightblue;
+  padding: 15px;
 }
 
 .applications {
