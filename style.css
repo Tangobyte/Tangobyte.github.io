@@ -49,7 +49,17 @@ footer {
   color:cyan;
   text-align:center;
 }
-/*Text styles*/
+/*Content*/
+progress{width: 400px;}
+.progressred{
+  background-color:red;
+  background-image: red;
+}
+.progressblue{
+  background-color:blue;
+  background-image: blue;
+}
+
 .articlebackground{background-color: white;}
 h1 {
     text-align:center;
@@ -71,6 +81,11 @@ article {
 }
 
 .applications {
+  color: black;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
   color: black;
 }
 /*Navigation bar*/
@@ -134,4 +149,11 @@ nav {font-family: Arial, Helvetica, sans-serif;}
 
   .subnav li:last-child {
     border-bottom:none;
+  }
+
+  /*FOR TESTING*/
+  .flexcontainer {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
   }
